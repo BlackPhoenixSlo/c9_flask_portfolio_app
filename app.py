@@ -13,6 +13,11 @@ app = Flask(__name__)
 def home_page():
 	return render_template('index.html')
 
+
+@app.route('/tuckermax', methods=['GET'])
+def home_page():
+	return render_template('code.html')
+
 @app.route('/<name>')
 def profile(name):
 	new_name = str(name) + ' like to eat apples'
