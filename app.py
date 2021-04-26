@@ -20,9 +20,6 @@ def profile(name):
 	new_name = str(name) + ' like to eat apples'
 	return render_template('index.html', name=new_name)
 
-@app.route('/tucker/max', methods=['GET'])
-def home_page():
-	return render_template('code.html')
 
 
 @app.route('/add_numbers', methods=['GET','POST'])
